@@ -33,3 +33,5 @@ Una vez implementado el clasificador, se utiliza con el set de testeo para verif
 
 Finalmente, se obtuvo una métrica en Test de 0.693. Si se compara esto con lo resultante de Train y Validation para el modelo elegido (0.73 y 0.736 respectivamente) se aprecia que su valor no se redujo significativamente. De esta manera se considera que el modelo funciona correctamente y no hay evidencia de Overfitting.
 
+Se recomienda descargar la Juptyer Notebook para poder ver los gráficos y los resultados de mejor forma sin problemas debido a la forma de visualización en github.
+
