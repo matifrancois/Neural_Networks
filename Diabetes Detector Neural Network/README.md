@@ -41,9 +41,9 @@ De esta manera se pudo obtener que en ninguno de los casos analizados con MultiL
 </p>
 
 <p align="center">
-  <img src="./images/loss_graph.png" width="350">
+  <img src="./images/roc_curve.png" width="350">
   <br/>
-  Figura 1: Loss Graph
+  Figura 2: ROC curve
 </p>
 
 
