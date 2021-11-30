@@ -28,3 +28,4 @@ De esta manera se pudo obtener que en ninguno de los casos analizados con MultiL
 - Momentum: 0.99
 - Regularización L2.
 
+Nota: Es muy probable que debido al tamaño del archivo diabetes_detector.ipynb, el proceso de carga en la visualización rápida de github tarde demasiado o no cargue las imágenes asociadas, por esta razón se deja a continuación una imágen del comportamiento de la red neuronal en la configuración elegida y se invita al lector a descargar la notebook para verla de mejor manera de forma local en su computadora, donde se podrán ver los gráficos sin inconvenientes.
