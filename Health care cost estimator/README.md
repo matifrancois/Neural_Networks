@@ -35,13 +35,17 @@ La métrica utilizada para este trabajo es el Mean Absolute Error (MAE).
 
 Se implementa una regresión lineal para la predicción del costo de atención medica de un paciente, de esta manera se obtiene la siguiente configuración para la red:
 
-<center>
+<div align="center">
 
 | Layer (type)     | Output Shape | Param # |
 |------------------|--------------|---------|
 | dense_18 (Dense) | (None,1)     | 10      |
 | dense_19 (Dense) | (None, 1)    | 2       |
-</center>
+</div>
+
+Por lo que el tamaño de la red queda así:
+
+
 <ul type="none">
 <li>Total Params: 12</li>
 <li>Trainable Params: 12</li>
@@ -59,14 +63,14 @@ De esta manera se seleccionaron los siguiente hiperparámetros:
 
 De esta manera se pudo encontrar los siguientes valores de MSE y MAE en train y validación:
 
-<center>
+<div align="center">
 
 |  Métrica  |     Train    | Validación |   Test   |
 |-----------|--------------|------------|----------|
 |    MSE    |   37006104   |  36955756  | 62286404 |
 |    MAE    |     3242.1   |    3235.7  |   4101.9 |
 
-</center>
+</div>
 
 Podemos ver que las métricas empeoran considerablemente al pasar a test, y si bien es normal que las métricas empeoren un poco en el caso de test, esta diferencia indicaría que algo no funciona como debería, probablemente el seteo de los hiperparámetros se adapta demasiado bien a validación y train pero no al set test.
 
@@ -90,32 +94,47 @@ A continuación se muestran los graficos de los MSE y MAE en función del númer
 En esta sección se muestran los resultados obtenidos despues de realizar una regresión lineal con features polinomiales para distintos grados del polinómio.
 
 ### Grado 1:
+<div align="center">
 
 |  Métrica  |     Train    | Validación |
 |-----------|--------------|------------|
 |    MSE    |   37006104   |  36955756  |
 |    MAE    |     3242.1   |    3235.7  |
 
+</div>
+
 ### Grado 2:
+
+<div align="center">
 
 |  Métrica  |     Train    | Validación |
 |-----------|--------------|------------|
 |    MSE    |   68638677   |  71394753  |
 |    MAE    |     3250.5   |    3289.3  |
 
+</div>
+
 ### Grado 3:
+
+<div align="center">
 
 |  Métrica  |     Train    | Validación |
 |-----------|--------------|------------|
 |    MSE    |   84789277   |   89120612 |
 |    MAE    |     4603.4   |     4709.7 |
 
+</div>
+
 ### Grado 4:
+
+<div align="center">
 
 |  Métrica  |     Train    | Validación |
 |-----------|--------------|------------|
 |    MSE    |   197222820  |  195305346 |
 |    MAE    |      642     |    6443    |
+
+</div>
 
 Se puede ver que el uso de features polinomiales no ayuda de mucho a la resolución de nuestra red neuronal ya que al aumentar el grado del polinomio no se aprecian mejoras en los resultados obtenidos.
 
@@ -125,7 +144,7 @@ Se implementa una red neuronal MLP para la predicción del costo de atención me
 
 De esta manera se  llega a la siguiente tabla que resume la configuración de la red elegida.
 
-<center>
+<div align="center">
 
 | Layer (type)                   |Output Shape|Param #|      Connected to     |
 |--------------------------------|------------|-------|-----------------------|
@@ -137,7 +156,10 @@ De esta manera se  llega a la siguiente tabla que resume la configuración de la
 | Dense_1 (Dense)                |  (None, 40) | 320  |Concatenated[0][0]     |
 | Dense_2 (Dense)                |  (None, 40) | 1640 |Dense_1[0][0]          |
 | output (Dense)                 |  (None, 1)  |  41  |Dense_2[0][0]          |
-</center>
+</div>
+
+Por lo que el tamaño de la red queda así:
+
 <ul type="none">
 <li>Total Params: 2009</li>
 <li>Trainable Params: 2009</li>
@@ -156,14 +178,14 @@ Para este caso se seleccionaron los siguientes hiperparámetros como configuraci
 
 De esta manera se pudo encontrar los siguientes valores de MSE y MAE en train y validación:
 
-<center>
+<div align="center">
 
 |  Métrica  |     Train    | Validación |   Test   |
 |-----------|--------------|------------|----------|
 |    MSE    |   18825965   |  17859164  | 31971606 |
 |    MAE    |     1517     |    1489    |   2161   |
 
-</center>
+</div>
 
 A continuación se muestran los graficos de los MSE y MAE en función del número de EPOCHs para este caso:
 

@@ -20,6 +20,7 @@ En la imágen de la figura 1 se puede ver un ejemplo de una imágen de un tibur�
 Algunas de las 100 clasificaciónes se muestran a continuación en la siguiente tabla, la lista completa se la puede encontrar en el siguiente [enlace](https://www.cs.toronto.edu/~kriz/cifar.html).
 
 <br/>
+<div align="center">
 
 | Superclass                     	| Classes                                               	|
 |--------------------------------	|-------------------------------------------------------	|
@@ -32,6 +33,8 @@ Algunas de las 100 clasificaciónes se muestran a continuación en la siguiente 
 | people                         	| baby, boy, girl, man, woman                           	|
 | trees                          	| maple, oak, palm, pine, willow                        	|
 | vehicles 1                     	| bicycle, bus, motorcycle, pickup truck, train         	|
+
+</div>
 
 <br/>
 
@@ -65,6 +68,8 @@ Como métrica del modelo se utiliza el accuracy y como optimizador se utiliza el
 
 Previo al entrenamiento se implementa Data augmentation para aumentar la cantidad de datos que se utilizan para entrenar la red, para eso se realiza un horizontal flip sobre las imágenes y un shift range horizontal y vertical de valor 0.1.
 
+<div align="center">
+
 | Layer (type)                | Output Shape      |        Param #    	|
 |-----------------------------|-------------------|-------------------	|
 | conv2d_5 (Conv2D)           | (None, 30, 30, 64)|        1792       	|
@@ -86,6 +91,10 @@ Previo al entrenamiento se implementa Data augmentation para aumentar la cantida
 | dense_4 (Dense)             | (None, 256)        |       65792      	|
 | dense_5 (Dense)             | (None, 100)        |       25700      	|
 
+</div>
+
+Por lo que el tamaño de la red queda así:
+
 - Total params: 1,777,636                                           	
 - Trainable params: 1,775,716                                       	
 - Non-trainable params: 1,920                                       	
@@ -106,6 +115,8 @@ Como optimizador se utiliza sgd (stochastic gradient descent) con un learning ra
 
 La tabla con la lista de parámetros entrenables de la red se puede ver en el archivo complex_image_clasifier.ipynb, no se muestra acá debido a que es demasiado grande, sólo se detallan a continuación el número de parámetros que se utilizan en la red.
 
+Por lo que el tamaño de la red queda así:
+
 - Total params: 15,047,588                                           	
 - Trainable params: 15,038,116                                      	
 - Non-trainable params: 9,472                                      	
@@ -124,6 +135,8 @@ Al set de testeo se le realiza data aumentation con la finalidad de aumentar la 
 
 Con todo lo anterior, la red termina teniendo la arquitectura que se puede ver en la siguiente tabla.
 
+<div align="center">
+
 | Layer (type)                 |Output Shape        |      Param # 	|
 |------------------------------|--------------------|-------------	|
 | efficientnet-b0 (Functional) |(None, 7, 7, 1280)  |     4049564 	|
@@ -131,6 +144,9 @@ Con todo lo anterior, la red termina teniendo la arquitectura que se puede ver e
 | dropout (Dropout)            |(None, 1280)        |     0       	|
 | dense (Dense)                |(None, 100)         |     128100  	|
 
+</div>
+
+Por lo que el tamaño de la red queda así:
 - Total params: 4,177,664                                           	
 - Trainable params: 4,135,648                                      	
 - Non-trainable params: 42,016
