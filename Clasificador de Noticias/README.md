@@ -31,10 +31,12 @@ Una vez implementado el clasificador, se utiliza con el set de testeo para verif
 
 Los accuracy obtenidos implementando el sistema con CountVectorizer y con TFIDF se pueden ver en la siguiente tabla:
 
-<center>
+<div align="center">
 
 |   Vectorizador  | Accuracy |
 |:---------------:|:--------:|
 | CountVectorizer |   0.73   |
 | TfidfVectorizer |   0.76   |
+  
+</div>
  
