@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="red_neuronal.png" alt="Neural Network" width="150">
+  <img src="https://i.ibb.co/dkpmdht/red-neuronal.png" alt="Neural Network" width="150">
   <br>
   Neural_Networks
   <br>
