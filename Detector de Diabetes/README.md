@@ -17,7 +17,7 @@ Las variables:
 *   Age: Edad (años)
 *   Outcome: Variable 0 o 1 (0 no posee diabtes, 1 posee diabetes)
 
-cPara el análisis se realiza primero un Análisis exploratorio de datos (EDA) completo del dataset, incluyendo: cantidad de valores nulos de las variables, número de personas para cada clase, análisis de distribuciones de las variables, etc.
+Para el análisis se realiza primero un Análisis exploratorio de datos (EDA) completo del dataset, incluyendo: cantidad de valores nulos de las variables, número de personas para cada clase, análisis de distribuciones de las variables, etc.
 
 A su vez se realiza una limpieza donde se eliminan los valores nulos y se eliminan las filas que no poseen datos.
 

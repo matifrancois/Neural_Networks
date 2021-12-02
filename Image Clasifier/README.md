@@ -1,6 +1,6 @@
 # Clasificador de Imágenes
 
-En este proyecto se implementan 3 clasificadores de imágenes en 100 categorías diferentes a partir del set de datos CIFAR-100. Cada uno de ellos se muestra en un archivo Jupyter Notebook diferente.
+En este proyecto se implementan 3 clasificadores de imágenes en 100 categorías diferentes a partir del set de datos CIFAR-100. Para ello cada uno de los archivos implementa una red neuronal del tipo CNN (Convolutional Neural Network). Cada una de las configuraciones planteadas se muestran en diferentes archivos Jupyter Notebook. 
 
 ---
 
